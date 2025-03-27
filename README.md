@@ -1,70 +1,77 @@
 # Workshop Spring Boot 4 JPA
 
-## Overview
+## Visão Geral
 
-Welcome to the **Workshop Spring Boot 4 JPA** project! This project is designed to demonstrate the use of modern Java technologies for building a robust and scalable application. The focus is on managing products, orders, and payments, leveraging a variety of technologies and tools to create a comprehensive solution.
+Bem-vindo ao **Workshop Spring Boot 4 JPA**! Este projeto demonstra como utilizar tecnologias modernas do ecossistema Java para construir uma aplicação robusta e escalável. Ele foca na gestão de produtos, pedidos e pagamentos, aproveitando ferramentas e tecnologias avançadas para criar uma solução completa.
 
-## Technologies
+## Tecnologias Utilizadas
 
-- **Java 17**: The latest version of Java for modern development.
-- **Maven**: Dependency management and build automation tool.
-- **Spring Boot 4**: Framework for building stand-alone, production-grade Spring-based applications.
-- **H2 Database**: Lightweight in-memory database for development and testing.
-- **PostgreSQL**: Powerful, open-source object-relational database for production use.
-- **Apache Tomcat**: Servlet container for deploying Java web applications.
-- **Postman**: API client for testing and interacting with the application's endpoints.
+- **Java 17**: Versão moderna para desenvolvimento eficiente.
+- **Maven**: Gerenciamento de dependências e automação de build.
+- **Spring Boot 4**: Framework para aplicações Spring autônomas e preparadas para produção.
+- **H2 Database**: Banco de dados leve para desenvolvimento e testes.
+- **PostgreSQL**: Banco de dados relacional open-source para produção.
+- **Apache Tomcat**: Contêiner para deploy de aplicações Java.
+- **Postman**: Cliente API para testar e interagir com os endpoints.
 
-## Features
+## Funcionalidades
 
-- **Product Management**: CRUD operations for product entities.
-- **Order Management**: Creation, retrieval, update, and deletion of orders.
-- **Payment Processing**: Handling payments associated with orders.
+- **Gerenciamento de Produtos**: Operações CRUD para produtos.
+- **Gestão de Pedidos**: Criação, recuperação, atualização e exclusão de pedidos.
+- **Processamento de Pagamentos**: Pagamentos associados a pedidos.
 
-## Getting Started
+## Como Começar
 
-### Prerequisites
+### Pré-requisitos
 
-- **Java 17** installed on your machine.
-- **Maven** installed for building the project.
+- **Java 17** instalado.
+- **Maven** configurado no ambiente.
 
-### Installation
+### Instalação
 
-1. Clone the repository:
-
-   ```bash
-   https://github.com/LucaolDev/workshop-springboot4-jpa.git
-   ```
-
-2. Navigate to the project directory:
+1. Clone o repositório:
 
    ```bash
-   cd workshop-springboot3-jpa
+   git clone https://github.com/LucaolDev/workshop-springboot4-jpa.git
    ```
 
-3. Build the project using Maven:
+2. cd workshop-springboot4-jpa
+
+   ```bash
+   cd workshop-springboot4-jpa
+   ```
+
+3. Construa o projeto com o Maven:
 
    ```bash
    mvn clean install
    ```
 
-4. Run the application:
+4. Execute a aplicação:
 
    ```bash
    mvn spring-boot:run
    ```
 
-### Configuration
+### Configuração
 
-- **Application Properties**: Configure the application properties in `src/main/resources/application.properties`.
+Edite o arquivo application.properties em src/main/resources para ajustar as configurações do banco de dados e outras propriedades da aplicação.
 
-### API Testing
+### Testando a API
 
-Use **Postman** to interact with the API endpoints provided by the application. The base URL for local testing is `http://localhost:8080`.
+Utilize o **Postman** ou outra ferramenta similar para interagir com os endpoints da API. O URL base para testes locais é: http://localhost:8080
 
-### Example Endpoints
+### Endpoints Disponíveis
 
-- **GET /api/products**: Retrieve all products.
-- **POST /api/products**: Create a new product.
-- **GET /api/orders**: Retrieve all orders.
-- **POST /api/orders**: Create a new order.
-- **POST /api/payments**: Process a payment for an order.
+**Produtos**:<br/>
+**GET** /api/products: Listar todos os produtos.
+
+**POST** /api/products: Criar um novo produto.
+
+**Pedidos**:<br/>
+**GET** /api/orders: Listar todos os pedidos.
+
+**POST** /api/orders: Criar um novo pedido.
+
+**Pagamentos**:<br/>
+**POST** /api/payments: Processar o pagamento de um pedido.
